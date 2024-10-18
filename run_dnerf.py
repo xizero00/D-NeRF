@@ -4,15 +4,15 @@ import time
 from torch.utils.tensorboard import SummaryWriter
 from tqdm import tqdm, trange
 
-
 from run_dnerf_helpers import *
-
 from load_blender import load_blender_data
 
-try:
-    from apex import amp
-except ImportError:
-    pass
+from torch import amp
+
+# try:
+#     from apex import amp
+# except ImportError:
+#     pass
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 np.random.seed(0)

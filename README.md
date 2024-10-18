@@ -10,6 +10,13 @@ This project is an extension of [NeRF](http://www.matthewtancik.com/nerf) enabli
 ![D-NeRF](https://www.albertpumarola.com/images/2021/D-NeRF/model.png)
 
 ## Installation
+Please use the following commands to create environment:
+
+```
+conda env create -f environment.yml
+```
+
+
 ```
 git clone https://github.com/albertpumarola/D-NeRF.git
 cd D-NeRF
